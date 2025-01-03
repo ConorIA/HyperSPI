@@ -333,7 +333,7 @@ void setup()
 
 		#if defined(CONFIG_IDF_TARGET_ESP32S2)
 			// sck: 7, miso: 34 (no important), MOSI: 11, spi select: 12
-			slave.begin(VSPI, 7, 34, 11, 12);
+			slave.begin(VSPI, 34, 35, 36, 33);
 		#else
 			slave.begin(VSPI);
 		#endif
